@@ -1,7 +1,8 @@
 package service;
 
-import java.rmi.server.RemoteObject;
+import java.rmi.*;
 
-public class FeeService extends RemoteObject{
+public interface FeeService extends Remote {
 
+	public void addFee(String id, String patientId) throws RemoteException;
 }
